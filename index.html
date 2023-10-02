@@ -1,0 +1,84 @@
+<?php
+
+session_start();
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <style>
+         /* Estilos para el botón */
+         .custom-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #030303; /* Color de fondo del botón */
+            color: #fff; /* Color del texto del botón */
+            text-decoration: none; /* Quita el subrayado del enlace */
+            border: none; /* Quita el borde del botón */
+            cursor: pointer; /* Cambia el cursor al hacer hover */
+            border-radius: 5px; /* Bordes redondeados */
+         }
+   
+         /* Estilos para el botón al pasar el mouse por encima */
+         .custom-button:hover {
+            background-color: #0056b3; /* Cambia el color de fondo al hacer hover */
+         }
+      </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-6">
+                 <div class="titlepage">
+                    <h2>Registrate</h2>
+                 </div>
+                 <div class="cont">
+                    <h3>Se parte de nuestra familia!</h3>
+                    <p>Estamos encantados de verte de vuelta. Sabemos que tus amigos peludos se sienten como en casa aquí, y estamos listos para brindarles otra estancia inolvidable llena de cariño, diversión y atención personalizada.
+
+                     Ingresa tus credenciales de inicio de sesión a continuación y prepárate para sumergirte en el mundo de comodidad y alegría que Casa Canina tiene reservado para ti y tus peludos compañeros.
+                     
+                     Gracias por confiar en nosotros una vez más. ¡Esperamos que esta visita sea tan especial como la primera!</p>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <form id="request" class="main_form">
+                    <div class="row">
+                       <div class="col-md-12">
+                          <input class="contactus" class="input" placeholder="Usuario" type="text" name="user"> 
+                       </div>
+                       <div class="col-md-12">
+                          <input class="contactus" class="input" placeholder="Contraseña" type="password" name="pass">                      
+                       </div>
+                       <div class="col-sm-12">
+                        <a href="login.html" class="custom-button">Ingresar</a>
+                     </div>
+                    </div>
+                 </form>
+              </div>
+           </div>
+        </div>
+        <div class="copyright">
+           <div class="container">
+              <div class="row">
+                 <div class="col-md-12">
+                    <p>Copyright 2023 Derechos Reservados Domenique Arroyo & David Lema</a></p>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     
+    
+</body>
+</html>
