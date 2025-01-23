@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>ProjectStream</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <h2 class="logotipo">Proyecto Final</h2>
+        <nav>
+          <a href="index.html" class="activo">Cerrar Sesión</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="pelicula-principal">
+        <div class="contenedor">
+          <h3 class="titulo">Noche Blanca 2024</h3>
+          <p class="descripcion">
+            Narra las aventuras de un equipo de fútbol, Liga de Quito, que
+            encuentra una nueva estrategia revolucionaria para superar las
+            limitaciones del juego tradicional. Unidos por su pasión y
+            dedicación, logran vencer a rivales poderosos en torneos nacionales
+            e internacionales, superando enormes desafíos tanto dentro como
+            fuera de la cancha.
+          </p>
+          <button role="button" class="boton" id="playButton">
+            <i class="fas fa-play"></i>Reproducir
+          </button>
+
+          <script>
+            document
+              .getElementById("playButton")
+              .addEventListener("click", function () {
+                window.location.href = "vid/video2.mp4";
+              });
+          </script>
+        </div>
+      </div>
+
+      <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+          <h3>Películas Recomendadas</h3>
+          <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+          <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+            <i class="fas fa-angle-left"></i>
+          </button>
+
+          <div class="contenedor-carousel">
+            <div class="carousel">
+              <div class="pelicula">
+                <a href="vid/video2.mp4"><img src="img/1.jpg" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="vid/video1.mp4"><img src="img/2.jpg" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="vid/video3.mp4"><img src="img/3.jpg" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="vid/video4.mp4"><img src="img/4.jpg" alt="" /></a>
+              </div>
+              <div class="pelicula">
+                <a href="vid/video5.mp4"><img src="img/5.jpg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+
+          <button role="button" id="flecha-derecha" class="flecha-derecha">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
